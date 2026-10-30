@@ -89,7 +89,7 @@ export default function Navigation() {
               value={presentationName}
               placeholder="Untitled Presentation"
               onChange={(e) => setPresentationName(e.target.value)}
-              className="rounded border border-transparent bg-transparent px-1 py-0.5 text-gray-600 hover:border-gray-400 focus:outline-none focus:ring-1"
+              className="rounded-sm border border-transparent bg-transparent px-1 py-0.5 text-gray-600 placeholder:text-gray-400 hover:border-gray-400 focus:ring-1 focus:ring-blue-500 focus:outline-hidden"
             />
 
             <Button
@@ -113,17 +113,17 @@ export default function Navigation() {
               <div key={menu.label} className="group relative">
                 <button
                   type="button"
-                  className="rounded-sm px-3 py-1 text-xs hover:bg-accent"
+                  className="hover:bg-accent rounded-sm px-3 py-1 text-xs"
                 >
                   {menu.label}
                 </button>
                 <div className="absolute top-full left-0 z-50 hidden group-hover:block">
-                  <div className="mt-1 w-48 rounded-md border bg-popover py-1 shadow-md">
+                  <div className="bg-popover mt-1 w-48 rounded-md border py-1 shadow-md">
                     {menu.items.map((item) => (
                       <button
                         type="button"
                         key={item}
-                        className="block w-full px-4 py-2 text-left text-xs hover:bg-accent"
+                        className="hover:bg-accent block w-full px-4 py-2 text-left text-xs"
                       >
                         {item}
                       </button>

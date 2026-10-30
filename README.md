@@ -1,10 +1,25 @@
 # Google Slides Portfolio
 
 This is a basic **Next.js** application designed to simulate a Google Slides editor to demonstrate the Next.js projects
-I've recently built.  I also have been messing around with [`v0.dev`](https://www.v0.dev) and seeing how complex and creative it can 
-get. 
+I've recently built. I also have been messing around with [`v0.dev`](https://www.v0.dev) and seeing how complex and creative it can
+get.
 
 ## Getting Started
+
+Use Node.js 26 and the pnpm 12.16.1 version declared in `package.json`.
+Dependencies must be at least 48 hours old. Dependency build scripts remain
+restricted; `@swc/core` uses its packaged native binary without running its install script.
+
+### Checks
+
+```bash
+pnpm install --frozen-lockfile
+pnpm test
+pnpm lint
+pnpm exec tsc --noEmit
+pnpm build
+pnpm audit
+```
 
 ### Development mode
 

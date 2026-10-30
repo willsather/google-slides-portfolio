@@ -1,13 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { cn } from "@/lib/utils";
 import {
   ChevronDown,
   Circle,
@@ -19,13 +11,24 @@ import {
   Undo2,
   ZoomIn,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { cn } from "@/lib/utils";
 
 const tailwindFonts = ["font-sans", "font-serif", "font-mono"];
 
 export default function Toolbar({
   selectedFont,
   setSelectedFont,
-}: { selectedFont: string; setSelectedFont: (font: string) => void }) {
+}: {
+  selectedFont: string;
+  setSelectedFont: (font: string) => void;
+}) {
   return (
     <div className="m-2 flex items-center gap-2 rounded-xl border-b bg-gray-100 px-4">
       <Button variant="ghost" size="icon" className="h-8 w-8">
@@ -41,7 +44,7 @@ export default function Toolbar({
         <ZoomIn className="h-4 w-4" />
       </Button>
 
-      <div className="mx-2 h-4 w-px bg-border" />
+      <div className="bg-border mx-2 h-4 w-px" />
 
       <DropdownMenu>
         <DropdownMenuTrigger asChild>

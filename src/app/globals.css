@@ -1,6 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@theme {
+  --color-blue-300: #93c5fd;
+  --color-blue-500: #3b82f6;
+  --color-gray-100: #f3f4f6;
+  --color-gray-400: #9ca3af;
+  --color-gray-600: #4b5563;
+  --color-yellow-400: #facc15;
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@custom-variant hover (&:hover);
 
 @layer base {
   :root {
@@ -69,9 +82,19 @@
 }
 
 @layer base {
-  * {
+  *,
+  ::before,
+  ::after,
+  ::backdrop,
+  ::file-selector-button {
     @apply border-border;
   }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
   body {
     @apply bg-background text-foreground;
   }

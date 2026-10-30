@@ -4,7 +4,7 @@ import SpeakerNotes from "@/app/speaker-notes";
 
 export default function GoogleSlidesPortfolio() {
   return (
-    <div className="flex h-screen flex-col bg-background">
+    <div className="bg-background flex h-screen flex-col">
       <Navigation />
 
       <Slides />

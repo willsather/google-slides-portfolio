@@ -20,22 +20,21 @@ export default function Sidebar({
   return (
     <div className="w-48 space-y-4 overflow-y-scroll border-r p-4">
       {slides.map((slide, index) => (
-        <div
+        <button
           key={slide.name}
-          className={`aspect-video cursor-pointer rounded-lg border-2 transition-colors hover:border-gray-400 ${
+          type="button"
+          className={`flex aspect-video w-full cursor-pointer flex-col rounded-lg border-2 text-left transition-colors hover:border-gray-400 ${
             currentSlide === index ? "border-primary" : ""
           }`}
           onClick={() => setCurrentSlide(index)}
-          onKeyUp={() => setCurrentSlide(index)}
-          onKeyDown={() => setCurrentSlide(index)}
         >
-          <div className="flex items-center justify-between p-2 text-xs">
+          <span className="flex items-center justify-between p-2 text-xs">
             <span>{index + 1}</span>
-            <span className="truncate text-[10px] text-muted-foreground">
+            <span className="text-muted-foreground truncate text-[10px]">
               {slide.name}
             </span>
-          </div>
-        </div>
+          </span>
+        </button>
       ))}
     </div>
   );

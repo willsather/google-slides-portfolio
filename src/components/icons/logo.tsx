@@ -1,6 +1,9 @@
 export default function LogoIcon({
   className = "",
-}: { size?: number; className?: string }) {
+}: {
+  size?: number;
+  className?: string;
+}) {
   return (
     <svg
       viewBox="0 0 73 100"
@@ -9,6 +12,7 @@ export default function LogoIcon({
       xmlns="http://www.w3.org/2000/svg"
       role="graphics-symbol"
     >
+      <title>Google Slides</title>
       <mask
         id="mask0_1:2"
         maskUnits="userSpaceOnUse"

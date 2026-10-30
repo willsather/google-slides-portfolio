@@ -1,5 +1,6 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
+
+import { Github, Linkedin, Twitter } from "@/components/icons/social";
 
 export default function IntroSlide() {
   return (
@@ -19,7 +20,7 @@ export default function IntroSlide() {
 
         {/* Name and Title */}
         <div className="space-y-2">
-          <h1 className="font-bold text-4xl">Will Sather</h1>
+          <h1 className="text-4xl font-bold">Will Sather</h1>
           <p className="text-muted-foreground text-xl">
             customer-facing software engineer
           </p>
@@ -31,7 +32,7 @@ export default function IntroSlide() {
             href="https://github.sather.ws"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-secondary p-2 transition-colors hover:bg-secondary/80"
+            className="bg-secondary hover:bg-secondary/80 rounded-full p-2 transition-colors"
             aria-label="GitHub"
           >
             <Github className="size-6" />
@@ -41,7 +42,7 @@ export default function IntroSlide() {
             href="https://linkedin.sather.ws"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-secondary p-2 transition-colors hover:bg-secondary/80"
+            className="bg-secondary hover:bg-secondary/80 rounded-full p-2 transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin className="size-6" />
@@ -51,7 +52,7 @@ export default function IntroSlide() {
             href="https://twitter.com/willsather"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-secondary p-2 transition-colors hover:bg-secondary/80"
+            className="bg-secondary hover:bg-secondary/80 rounded-full p-2 transition-colors"
             aria-label="Twitter"
           >
             <Twitter className="size-6" />

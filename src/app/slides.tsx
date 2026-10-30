@@ -2,11 +2,10 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-
-import Project from "@/app/project";
-import Toolbar from "@/app/toolbar";
 import IntroSlide from "@/app/intro-slide";
+import Project from "@/app/project";
 import Sidebar from "@/app/sidebar";
+import Toolbar from "@/app/toolbar";
 
 const slides = [
   {
@@ -124,8 +123,8 @@ export default function Slides({ present }: { present?: boolean }) {
         ) : null}
 
         {/* Slide Content */}
-        <div className="flex-1 bg-muted/20 p-8">
-          <div className="mx-auto aspect-video max-w-4xl rounded-lg bg-background p-8 shadow-lg">
+        <div className="bg-muted/20 flex-1 p-8">
+          <div className="bg-background mx-auto aspect-video max-w-4xl rounded-lg p-8 shadow-lg">
             {renderSlideContent()}
           </div>
         </div>
