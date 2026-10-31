@@ -199,9 +199,9 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
+      cn:
+        specifier: 0.5.0
+        version: 0.5.0
       lucide-react:
         specifier: 1.63.0
         version: 1.63.0(@types/react@19.3.0)(react@19.3.1)
@@ -217,9 +217,6 @@ importers:
       sonner:
         specifier: ^2.0.8
         version: 2.0.8(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      tailwind-merge:
-        specifier: ^3.7.0
-        version: 3.7.0
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@4.3.3)
@@ -2042,6 +2039,14 @@ packages:
       }
     engines: { node: ">=6" }
 
+  cn@0.5.0:
+    resolution:
+      {
+        integrity: sha512-JGEixZEpfFXm1P5uXwvEobOFLlHwIWi5v4tjd1ZwfiYmcEilkuD2l+054rvJcYCR1B+uVThHeUbgmNz1FwuxuA==,
+      }
+    engines: { node: ">=22" }
+    hasBin: true
+
   css-tree@3.2.1:
     resolution:
       {
@@ -2737,12 +2742,6 @@ packages:
         optional: true
       babel-plugin-macros:
         optional: true
-
-  tailwind-merge@3.7.0:
-    resolution:
-      {
-        integrity: sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==,
-      }
 
   tailwindcss-animate@1.0.7:
     resolution:
@@ -3886,6 +3885,8 @@ snapshots:
 
   clsx@2.1.1: {}
 
+  cn@0.5.0: {}
+
   css-tree@3.2.1:
     dependencies:
       mdn-data: 2.27.1
@@ -4282,8 +4283,6 @@ snapshots:
     dependencies:
       client-only: 0.0.1
       react: 19.3.1
-
-  tailwind-merge@3.7.0: {}
 
   tailwindcss-animate@1.0.7(tailwindcss@4.3.3):
     dependencies:
